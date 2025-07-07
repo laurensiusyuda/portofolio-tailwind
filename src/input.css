@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap");
+@import "tailwindcss";
+
+/* menambahkan roboto dan roboto mono */
+
+@theme {
+    --font-roboto: "Roboto", sans-serif;
+    --font-roboto-mono: "Roboto Mono", monospace;
+    --color-tosca: #1FBBA6
+}
