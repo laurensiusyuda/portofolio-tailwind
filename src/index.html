@@ -1,118 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Tailwind</title>
-    <link href="./output.css" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portofolio Tailwind</title>
+        <link href="./output.css" rel="stylesheet">
 
-</head>
+    </head>
 
-<body>
-    <header class="px-4 py-4 shadow-lg bg-tosca font-roboto-mono">
-        <div class="flex flex-row items-center text-white justify-between">
-            <h1 class="text-xl font-thin">
-                CODE<span class="font-bold">POLITAN</span>
-            </h1>
+    <body class="font-roboto-mono">
+        <header class="px-4 py-4 shadow-lg bg-tosca sticky top-0 z-50">
+            <div
+                class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center text-white justify-between">
+                <h1 class="text-xl md:text-2xl font-thin mb-2 sm:mb-0">
+                    CODE<span class="font-bold">POLITAN</span>
+                </h1>
 
-            <nav class="flex flex-row items-center space-x-6 text-lg">
-                <a href="#">Kenapa Kami</a>
-                <a href="#">Keunggulan</a>
-                <a href="#">CTA</a>
-            </nav>
-        </div>
-    </header>
-    <section class="px-10 pt-40 pb-24 text-center font-roboto-mono">
-        <div>
-            <h2 class="text-4xl font-bold leading-[2] mb-4">
-                Belajar Ngoding Lebih Asik Bareng <span class="text-tosca font-thin">Code<span
-                            class="font-bold">politan</span></span>
-            </h2>
-            <p class="text-lg text-gray-500">
-                Ikuti kelas pemograman dari codepolitan, dan langsung dari praktisi industri, siap jadi Programmer
-            </p>
-            <div class="mt-10">
-                <a href="#" class="px-6 py-3 font-black border-2 border-solid border-tosca rounded-lg hover:bg-gray-500 hover:border-gray-500 hover:text-white transition delay-100 ease-in-out">Lihat
-                        Semua
-                        Kelas</a>
-
-                <a href="#" class="px-6 py-3 bg-tosca rounded-lg hover:bg-gray-500 hover:text-white transition delay-100 ease-in-out">Daftar
-                        Sekarang</a>
+                <nav
+                    class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 md:space-x-6 text-sm sm:text-base lg:text-lg">
+                    <a href="#kenapa"
+                        class="hover:text-gray-200 transition-colors duration-200 px-2 py-1">Kenapa
+                        Kami</a>
+                    <a href="#keunggulan"
+                        class="hover:text-gray-200 transition-colors duration-200 px-2 py-1">Keunggulan</a>
+                    <a href="#cta"
+                        class="hover:text-gray-200 transition-colors duration-200 px-2 py-1">CTA</a>
+                </nav>
             </div>
-        </div>
-    </section>
-    <section class="py-16 px-10">
-        <div class="px-6">
-            <h2 class="text-4xl font-bold text-center mb-15">
-                Kenapa Harus Belajar di <span class="text-tosca font-thin">Code<span
-                            class="font-bold">politan</span></span>
-                ?
-            </h2>
-            <div class="grid grid-cols-3 md:grid-cols-3 gap-10 mt-10">
-                <div class="group p-6 rounded-lg shadow-lg hover:bg-tosca hover:text-white transition delay-100 ease-in-out hover:translate-y-[-4px] hover:scale-105 hover:shadow-2xl border-2 border-solid border-gray-200">
-                    <h3 class="text-lg font-bold mb-2 text-center group-hover:text-white">Belajar dari Praktisi</h3>
-                    <p class="text-gray-500 text-left group-hover:text-white">
-                        Materi yang diajarkan langsung oleh praktisi industri yang berpengalaman.
-                    </p>
-                </div>
+        </header>
 
-                <div class="group p-6 rounded-lg shadow-lg hover:bg-tosca hover:text-white transition delay-100 ease-in-out hover:translate-y-[-4px] hover:scale-105 hover:shadow-2xl border-2 border-solid border-gray-200">
-                    <h3 class="text-lg font-bold mb-2 text-center group-hover:text-white">Kelas Interaktif
-                    </h3>
-                    <p class="text-gray-500 text-left group-hover:text-white">Kelas yang interaktif dan menyenangkan, membuat belajar jadi lebih mudah.</p>
-                </div>
-
-                <div class="group p-6 rounded-lg shadow-lg hover:bg-tosca hover:text-white transition delay-100 ease-in-out hover:translate-y-[-4px] hover:scale-105 hover:shadow-2xl border-2 border-solid border-gray-200">
-                    <h3 class="text-lg font-bold mb-2 text-center group-hover:text-white">Materi Terupdate
-                    </h3>
-                    <p class="text-gray-500 text-left group-hover:text-white">Materi yang selalu terupdate sesuai dengan perkembangan teknologi terkini.</p>
+        <section
+            class="px-4 sm:px-6 lg:px-10 xl:px-12 pt-12 sm:pt-16 md:pt-20 lg:pt-24 xl:pt-32 pb-12 sm:pb-16 lg:pb-20 text-center">
+            <div class="max-w-6xl mx-auto">
+                <h2
+                    class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 sm:mb-6">
+                    Belajar Ngoding Lebih Asik Bareng
+                    <span
+                        class="text-tosca font-thin block sm:inline mt-2 sm:mt-0">
+                        Code<span class="font-bold">politan</span>
+                    </span>
+                </h2>
+                <p
+                    class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-500 mb-6 sm:mb-8 lg:mb-10 px-2 sm:px-4 md:px-8 lg:px-16 xl:px-24 leading-relaxed">
+                    Ikuti kelas pemograman dari codepolitan, dan langsung dari
+                    praktisi industri, siap jadi Programmer
+                </p>
+                <div
+                    class="flex flex-col gap-4 sm:flex-row sm:gap-4 justify-center items-center max-w-md sm:max-w-none mx-auto">
+                    <a href="#"
+                        class="w-full sm:w-auto px-6 py-3 lg:px-8 lg:py-4 font-black border-2 border-solid border-tosca rounded-lg hover:bg-tosca hover:text-white transition-all duration-300 ease-in-out text-center text-sm sm:text-base">
+                        Lihat Semua Kelas
+                    </a>
+                    <a href="#"
+                        class="w-full sm:w-auto px-6 py-3 lg:px-8 lg:py-4 bg-tosca text-white rounded-lg hover:bg-gray-600 transition-all duration-300 ease-in-out text-center text-sm sm:text-base">
+                        Daftar Sekarang
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="py-16 px-10">
-        <div class="px-6">
-            <h2 class="text-4xl font-bold text-center mb-15"> Keunggulan
-                <span class="text-tosca font-thin">Code<span
-                            class="font-bold">politan</span></span>
-            </h2>
-            <div class="grid grid-cols-3 md:grid-cols-3 gap-10 mt-10">
-                <div class="group p-6 rounded-lg shadow-lg hover:bg-tosca hover:text-white transition delay-100 ease-in-out hover:translate-y-[-4px] hover:scale-105 hover:shadow-2xl border-2 border-solid border-gray-200">
-                    <h3 class="text-lg font-bold mb-2 text-center group-hover:text-white">Kelas Online
-                    </h3>
-                    <p class="text-gray-500 text-left group-hover:text-white">Kelas yang bisa diakses kapan saja dan di mana saja.</p>
-                </div>
-                <div class="group p-6 rounded-lg shadow-lg hover:bg-tosca hover:text-white transition delay-100 ease-in-out hover:translate-y-[-4px] hover:scale-105 hover:shadow-2xl border-2 border-solid border-gray-200">
-                    <h3 class="text-lg font-bold mb-2 text-center group-hover:text-white">Mentor Berpengalaman
-                    </h3>
-                    <p class="text-gray-500 text-left group-hover:text-white">Mentor yang berpengalaman dan siap membantu kamu belajar.
-                    </p>
-                </div>
+        </section>
 
-                <div class="group p-6 rounded-lg shadow-lg hover:bg-tosca hover:text-white transition delay-100 ease-in-out hover:translate-y-[-4px] hover:scale-105 hover:shadow-2xl border-2 border-solid border-gray-200">
-                    <h3 class="text-lg font-bold mb-2 text-center group-hover:text-white">Komunitas Aktif
-                    </h3>
-                    <p class="text-gray-500 text-left group-hover:text-white">Bergabung dengan komunitas aktif yang siap mendukung kamu belajar.
-                    </p>
+        <section id="kenapa"
+            class="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-10 xl:px-12">
+            <div class="max-w-7xl mx-auto">
+                <h2
+                    class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 sm:mb-12 lg:mb-16">
+                    Kenapa Harus Belajar di
+                    <span
+                        class="text-tosca font-thin block sm:inline mt-2 sm:mt-0">
+                        Code<span class="font-bold">politan</span>
+                    </span>?
+                </h2>
+                <div
+                    class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-10">
+                    <div
+                        class="group p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg hover:bg-tosca hover:text-white transition-all duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl border-2 border-solid border-gray-200 bg-white">
+                        <h3
+                            class="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-center group-hover:text-white">
+                            Belajar dari Praktisi
+                        </h3>
+                        <p
+                            class="text-gray-500 text-sm sm:text-base text-left group-hover:text-white leading-relaxed">
+                            Materi yang diajarkan langsung oleh praktisi
+                            industri yang berpengalaman.
+                        </p>
+                    </div>
+
+                    <div
+                        class="group p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg hover:bg-tosca hover:text-white transition-all duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl border-2 border-solid border-gray-200 bg-white">
+                        <h3
+                            class="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-center group-hover:text-white">
+                            Kelas Interaktif
+                        </h3>
+                        <p
+                            class="text-gray-500 text-sm sm:text-base text-left group-hover:text-white leading-relaxed">
+                            Kelas yang interaktif dan menyenangkan, membuat
+                            belajar jadi lebih mudah.
+                        </p>
+                    </div>
+
+                    <div
+                        class="group p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg hover:bg-tosca hover:text-white transition-all duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl border-2 border-solid border-gray-200 bg-white sm:col-span-2 lg:col-span-1">
+                        <h3
+                            class="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-center group-hover:text-white">
+                            Materi Terupdate
+                        </h3>
+                        <p
+                            class="text-gray-500 text-sm sm:text-base text-left group-hover:text-white leading-relaxed">
+                            Materi yang selalu terupdate sesuai dengan
+                            perkembangan teknologi terkini.
+                        </p>
+                    </div>
                 </div>
             </div>
-    </section>
-    <section class="py-16 px-10 bg-tosca text-center">
-        <div class="px-6">
-            <h2 class="text-4xl font-bold text-center mb-15 text-white">Siap Menjadi Programmer Handal</h2>
-            <p class="text-lg text-white mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatem asperiores nostrum minus sed quidem nisi amet, iusto temporibus deleniti unde quas blanditiis? Minima ad architecto nam quo, asperiores at?</p>
-            <a href="#" class="bg-white text-black py-4 px-6 rounded-lg hover:bg-gray-500 hover:text-white transition delay-100 ease-in-out">Daftar
-                        Sekarang</a>
-        </div>
-    </section>
-    <footer class="py-10 bg-grey-300">
-        <div class="px-6 text-center">
-            <p class="text-gray-500">© 2023 Codepolitan. All rights reserved.
-            </p>
-            <p class="text-gray-500">Made with ❤️ by Codepolitan</p>
-        </div>
-    </footer>
-</body>
+        </section>
 
+        <section id="keunggulan"
+            class="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-10 xl:px-12 bg-gray-50">
+            <div class="max-w-7xl mx-auto">
+                <h2
+                    class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 sm:mb-12 lg:mb-16">
+                    Keunggulan
+                    <span
+                        class="text-tosca font-thin block sm:inline mt-2 sm:mt-0">
+                        Code<span class="font-bold">politan</span>
+                    </span>
+                </h2>
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-10">
+                    <div
+                        class="group p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg hover:bg-tosca hover:text-white transition-all duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl border-2 border-solid border-gray-200 bg-white">
+                        <h3
+                            class="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-center group-hover:text-white">
+                            Kelas Online
+                        </h3>
+                        <p
+                            class="text-gray-500 text-sm sm:text-base text-left group-hover:text-white leading-relaxed">
+                            Kelas yang bisa diakses kapan saja dan di mana saja.
+                        </p>
+                    </div>
+
+                    <div
+                        class="group p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg hover:bg-tosca hover:text-white transition-all duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl border-2 border-solid border-gray-200 bg-white">
+                        <h3
+                            class="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-center group-hover:text-white">
+                            Mentor Berpengalaman
+                        </h3>
+                        <p
+                            class="text-gray-500 text-sm sm:text-base text-left group-hover:text-white leading-relaxed">
+                            Mentor yang berpengalaman dan siap membantu kamu
+                            belajar.
+                        </p>
+                    </div>
+
+                    <div
+                        class="group p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg hover:bg-tosca hover:text-white transition-all duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl border-2 border-solid border-gray-200 bg-white sm:col-span-2 lg:col-span-1">
+                        <h3
+                            class="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-center group-hover:text-white">
+                            Komunitas Aktif
+                        </h3>
+                        <p
+                            class="text-gray-500 text-sm sm:text-base text-left group-hover:text-white leading-relaxed">
+                            Bergabung dengan komunitas aktif yang siap mendukung
+                            kamu belajar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta"
+            class="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-10 xl:px-12 bg-tosca text-center">
+            <div class="max-w-5xl mx-auto">
+                <h2
+                    class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 sm:mb-8 lg:mb-12 text-white">
+                    Siap Menjadi Programmer Handal
+                </h2>
+                <p
+                    class="text-sm sm:text-base md:text-lg lg:text-xl text-white mb-8 sm:mb-10 lg:mb-12 px-2 sm:px-4 md:px-8 lg:px-16 leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                    voluptatem asperiores nostrum minus sed quidem nisi amet,
+                    iusto temporibus deleniti unde quas blanditiis? Minima ad
+                    architecto nam quo, asperiores at?
+                </p>
+                <a href="#"
+                    class="inline-block bg-white text-black py-3 sm:py-4 lg:py-5 px-6 sm:px-8 lg:px-10 rounded-lg hover:bg-gray-200 transition-all duration-300 ease-in-out font-semibold text-sm sm:text-base lg:text-lg shadow-lg hover:shadow-xl">
+                    Daftar Sekarang
+                </a>
+            </div>
+        </section>
+
+        <footer class="py-8 sm:py-10 lg:py-12 bg-gray-300">
+            <div class="px-4 sm:px-6 text-center max-w-7xl mx-auto">
+                <p class="text-gray-700 mb-2 text-sm sm:text-base">
+                    © 2023 Codepolitan. All rights reserved.
+                </p>
+                <p class="text-gray-700 text-sm sm:text-base">
+                    Made with ❤️ by Codepolitan
+                </p>
+            </div>
+        </footer>
+    </body>
 </html>
