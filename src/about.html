@@ -1,104 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portofolio</title>
-        <script
-            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-        <!-- style css -->
-        <style>	
-        .gradient 
-        {
-            background-image: linear-gradient(to bottom right, #4C51BF , #702459 );
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <!-- cdn tailwind dan font awesome -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
         }
-        </style>
+    </style>
 
-    </head>
-    <body>
-        <section class="w-screen mx-auto px-4">
-            <nav class="flex flex-wrap p-6 justify-between">
-                <div class="flex flex-shrink-0 mr-6">
-                    <img src="../img/logo.png" alt class="h-10 w-50 mr-2">
-                </div>
-                <div class="block lg:hidden">
-                    <a
-                        class="flex items-center px-3 py-2 rounded border border-indigo-400 text-indigo-500 hover:text-indigo-700 hover:border-indigo-700">
-                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path
-                                d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                        </svg>
-                    </a>
-                </div>
-                <div
-                    class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                    <div class="text-sm lg:flex-grow">
-                        <a href="#about"
-                            class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-4 text-gray-400 hover:text-gray-800 ">About
-                            Me</a>
-                        <a href="#recent"
-                            class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-4 text-gray-400 hover:text-gray-800 ">Recent
-                            Work</a>
-                        <a href="#skill"
-                            class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-4 text-gray-400 hover:text-gray-800 ">Skill</a>
-                        <a href="#contact"
-                            class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-4 text-gray-400 hover:text-gray-800 ">Contact
-                            Me</a>
-                    </div>
-                </div>
-                <div>
-                    <a href="#"
-                        class="inline-block text-sm px-4 py-2 rounded text-gray-600 border border-gray-600 hover:border-transparent hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0">
-                        Contact me
-                    </a>
-                </div>
-            </nav>
-        </section>
+</head>
 
-        <!-- About Me -->
-        <section
-            class="w-screen mx-auto py-4 gradient">
-            <div class="px-16 py-8n text-white text-center">
-                <h1
-                    class="w-full text-5xl font-bold">About
-                    Me
-                </h1>
-                <div class="mb-4 mt-4">
-                    <div
-                        class="bg-pink-100 w-2/3 md:w-1/6 opacity-75 rounded h-1 mx-auto"></div>
-                </div>
-                <h2 class="text-3xl font-bold mb-5">
-                    Hai, Nama Saya Laurensius Yuda. Senang berjumpa dengan anda.
-                </h2>
-                <h3 class="text-lg mb-5">
-                    Saya seorang programmer dan juga analis, selain dapat
-                    membuat aplikasi menggunakan bahasa pemrograman, Saya juga
-                    bisa merancang suatu sistem yang dibutuhkan user.
-                </h3>
-                <div class="w-full">
-                    <div class="px-4 py-4">
-                        <img
-                            src="../img/laurensius_yuda.jpeg"
-                            class="shadow-lg rounded-full max-w-full mx-auto text-center w-48" />
-                    </div>
+<body>
+    <section class="w-screen mx-auto px-4">
+        <nav class="flex flex-wrap p-6 justify-between">
+
+            <div class="flex flex-shrink-0 mr-6">
+                <img src="../img/logo.png" alt class="h-10 w-50 mr-2">
+            </div>
+
+            <div class="block lg:hidden">
+                <a class="flex items-center px-3 py-2 rounded border border-indigo-400 text-indigo-500 hover:text-indigo-700 hover:border-indigo-700">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-4 text-gray-400 hover:text-gray-800 ">Profile</a>
+                    <a href="#recent" class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-4 text-gray-400 hover:text-gray-800 ">Recent Work</a>
+                    <a href="#skill" class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-4 text-gray-400 hover:text-gray-800 ">Skill</a>
+                    <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-4 text-gray-400 hover:text-gray-800 ">Contact Me</a>
                 </div>
             </div>
-        </section>
 
-        <!-- Skill Framework -->
-        <section class="w-screen mx-auto py-4 bg-white h-32">
-            Skill Framework
-        </section>
-        <!-- My Recent Work -->
-        <section class="w-screen mx-auto py-4 bg-gray-300 h-32">
-            Recent Work
-        </section>
-        <!-- Contact Me -->
-        <section class="w-screen mx-auto py-4 bg-indigo-700 h-32">
-            Contact Me
-        </section>
-        <!-- Footer -->
-        <section class="w-screen mx-auto py-4 bg-white h-32">Footer</section>
-    </body>
+            <div>
+                <a href="#" class="inline-block text-sm px-4 py-2 rounded text-gray-600 border border-gray-600 hover:border-transparent hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0"> Contact me</a>
+            </div>
+
+        </nav>
+    </section>
+
+    <!-- About Me -->
+    <section class="w-screen mx-auto py-4 bg-grav y-800">
+        <div class="px-16 py-8n text-gray-700 text-center">
+            <h1 class="w-full text-5xl font-bold">About Me</h1>
+            <div class="mb-4 mt-4">
+                <div class="bg-gray-400 w-2/3 md:w-1/6 opacity-75 rounded h-1 mx-auto"></div>
+            </div>
+
+            <h2 class="text-3xl font-bold mb-5">
+                Hai, Nama Saya Laurensius Yuda. Senang berjumpa dengan anda.
+            </h2>
+
+            <h3 class="text-lg mb-5">
+                Saya seorang programmer dan juga analis, selain dapat membuat aplikasi menggunakan bahasa pemrograman, Saya juga bisa merancang suatu sistem yang dibutuhkan user.
+            </h3>
+
+            <div class="w-full">
+                <div class="px-4 py-4">
+                    <img src="../img/laurensius_yuda.jpeg" class="shadow-lg rounded-full max-w-full mx-auto text-center w-48" />
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-gray-200 py-4 px-4 md:py-8 md:px-8 m-16 rounded-lg">
+
+                <div class="max-w-sm shadow-lg px-4 py-4 m-3 bg-white text-center hover:-translate-y-2 transition duration-300">
+                    <i class="fas fa-laptop-code fa-5x text-gray-700 mb-6"></i>
+                    <div class="p-4">
+                        <p class="font-bold text-lg md:text-xl mb-6 text-gray-500">Programming</p>
+
+                        <div class="flex flex-col md:flex-row justify-center items-center gap-2 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M5.9 15.375L2.5 12l11-11h6.775zM13.5 23l-5.925-5.925L13.5 11.15h6.775l-5.925 5.925L20.275 23z"/></svg>
+                            <p class="text-sm md:text-base text-gray-500 font-bold pt-0.5">Flutter</p>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row justify-center items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M21.7 6.53c.01.02.01.05.01.08v4.29c0 .1-.06.22-.15.27l-3.61 2.08v4.11c0 .11-.05.21-.15.27l-7.52 4.33c-.02.01-.04.04-.06.04H10s0-.03-.04-.04l-7.52-4.33a.32.32 0 0 1-.15-.27V4.5c0-.05 0-.08.01-.1c0-.01.01-.02.01-.03c0-.02.01-.03.02-.05c0-.01.01-.02.02-.03l.03-.03l.03-.03c.01-.01.02-.02.03-.02L6.2 2.04c.1-.04.22-.04.3 0l3.78 2.17c.01.01.02.01.03.02l.03.03l.03.03c.01.01.02.02.02.03c.01.02.02.03.02.05c0 .01.01.02.01.03c.01.03.01.05.01.1v8l3.14-1.78V6.61c0-.03 0-.06.01-.08l.01-.03s.01-.03.02-.05c0-.01.01-.02.02-.03l.03-.03l.03-.03c.01-.01.02-.02.03-.02l3.78-2.17c.08-.06.2-.06.3 0l3.76 2.17c.01 0 .02.01.03.02l.03.03l.03.03c.01.01.01.02.02.03c.01.02.01.05.02.05s.01 0 .01.03m-.61 4.19V7.15l-3.14 1.8v3.55zm-3.76 6.46V13.6l-6.9 3.94v3.61zM2.91 5v12.18l6.9 3.97v-3.61l-3.6-2.04H6.2c-.01 0-.02 0-.03-.03c-.01 0-.02-.01-.03-.02l-.03-.03c-.01-.01-.01-.02-.02-.03c-.01-.02-.01-.03-.02-.04c0-.02-.01-.03-.01-.04c-.01-.01-.01-.03-.01-.04V6.82zm3.45-2.32L3.23 4.5l3.13 1.78L9.5 4.5zm3.45 10.2V5L6.67 6.82v7.87zm7.83-8.08L14.5 6.61l3.14 1.8l3.13-1.8zm-.31 4.15l-3.14-1.8v3.57l3.14 1.78zM10.12 17L17 13.06l-3.12-1.8L7 15.23z"/></svg>
+                            <p class="text-sm md:text-base text-gray-500 font-bold pt-0.5">Laravel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" max-w-sm shadow-lg px-4 py-4 bg-gray-400 m-3 "></div>
+                <div class="max-w-sm shadow-lg px-4 py-4 bg-gray-600 m-3 "></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Framework -->
+    <section class="w-screen mx-auto py-4 bg-white h-32 ">
+        Skill Framework
+    </section>
+    <!-- My Recent Work -->
+    <section class="w-screen mx-auto py-4 bg-gray-300 h-32 ">
+        Recent Work
+    </section>
+    <!-- Contact Me -->
+    <section class="w-screen mx-auto py-4 bg-indigo-700 h-32 ">
+        Contact Me
+    </section>
+    <!-- Footer -->
+    <section class="w-screen mx-auto py-4 bg-white h-32 ">Footer</section>
+</body>
+
 </html>
