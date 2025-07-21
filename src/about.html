@@ -1,116 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
-    <!-- cdn tailwind dan font awesome -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portofolio</title>
+        <!-- cdn tailwind dan font awesome -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+            rel="stylesheet">
 
-    <style>
+        <style>
         body {
             font-family: 'Roboto Mono', monospace;
         }
     </style>
 
-</head>
+    </head>
 
-<body>
-    <section class="w-screen mx-auto px-4">
-        <nav class="flex flex-wrap p-6 justify-between">
+    <body>
+        <!-- ! Navbar -->
+        <section class="w-screen mx-auto px-4">
+            <nav
+                class="flex flex-wrap p-6 justify-between items-center bg-white border-b border-gray-200">
 
-            <div class="flex flex-shrink-0 mr-6">
-                <img src="../img/logo.png" alt class="h-10 w-50 mr-2">
-            </div>
-
-            <div class="block lg:hidden">
-                <a class="flex items-center px-3 py-2 rounded border border-indigo-400 text-indigo-500 hover:text-indigo-700 hover:border-indigo-700">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
-                </a>
-            </div>
-
-            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div class="text-sm lg:flex-grow">
-                    <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-4 text-gray-400 hover:text-gray-800 ">Profile</a>
-                    <a href="#recent" class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-4 text-gray-400 hover:text-gray-800 ">Recent Work</a>
-                    <a href="#skill" class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-4 text-gray-400 hover:text-gray-800 ">Skill</a>
-                    <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-4 text-gray-400 hover:text-gray-800 ">Contact Me</a>
+                <div class="flex flex-shrink-0 mr-6">
+                    <h1 class="text-2xl font-bold text-gray-900">LYWN</h1>
                 </div>
-            </div>
 
-            <div>
-                <a href="#" class="inline-block text-sm px-4 py-2 rounded text-gray-600 border border-gray-600 hover:border-transparent hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0"> Contact me</a>
-            </div>
-
-        </nav>
-    </section>
-
-    <!-- About Me -->
-    <section class="w-screen mx-auto py-4 bg-grav y-800">
-        <div class="px-16 py-8n text-gray-700 text-center">
-            <h1 class="w-full text-5xl font-bold">About Me</h1>
-            <div class="mb-4 mt-4">
-                <div class="bg-gray-400 w-2/3 md:w-1/6 opacity-75 rounded h-1 mx-auto"></div>
-            </div>
-
-            <h2 class="text-3xl font-bold mb-5">
-                Hai, Nama Saya Laurensius Yuda. Senang berjumpa dengan anda.
-            </h2>
-
-            <h3 class="text-lg mb-5">
-                Saya seorang programmer dan juga analis, selain dapat membuat aplikasi menggunakan bahasa pemrograman, Saya juga bisa merancang suatu sistem yang dibutuhkan user.
-            </h3>
-
-            <div class="w-full">
-                <div class="px-4 py-4">
-                    <img src="../img/laurensius_yuda.jpeg" class="shadow-lg rounded-full max-w-full mx-auto text-center w-48" />
+                <div class="w-full lg:flex lg:items-center lg:w-auto">
+                    <div class="text-sm lg:flex-grow">
+                        <a href="#about"
+                            class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-4 text-gray-500 hover:text-gray-900 ">Profile</a>
+                        <a href="#recent"
+                            class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-4 text-gray-500 hover:text-gray-900 ">Recent
+                            Work</a>
+                        <a href="#skill"
+                            class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-4 text-gray-500 hover:text-gray-900 ">Skill</a>
+                        <a href="#contact"
+                            class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-4 text-gray-500 hover:text-gray-900 ">Contact
+                            Me</a>
+                    </div>
                 </div>
-            </div>
+            </nav>
+        </section>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-gray-200 py-4 px-4 md:py-8 md:px-8 m-16 rounded-lg">
-
-                <div class="max-w-sm shadow-lg px-4 py-4 m-3 bg-white text-center hover:-translate-y-2 transition duration-300">
-                    <i class="fas fa-laptop-code fa-5x text-gray-700 mb-6"></i>
-                    <div class="p-4">
-                        <p class="font-bold text-lg md:text-xl mb-6 text-gray-500">Programming</p>
-
-                        <div class="flex flex-col md:flex-row justify-center items-center gap-2 mb-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M5.9 15.375L2.5 12l11-11h6.775zM13.5 23l-5.925-5.925L13.5 11.15h6.775l-5.925 5.925L20.275 23z"/></svg>
-                            <p class="text-sm md:text-base text-gray-500 font-bold pt-0.5">Flutter</p>
+        <!-- ! Profile -->
+        <section class="w-screen mx-auto py-4 bg-grav y-800">
+            <div class="px-16 py-8 text-gray-700 text-center">
+                <!-- ! About Me -->
+                <div
+                    class="flex flex-col md:flex-row justify-center items-center">
+                    <div class="mb-8 md:mb-0 md:w-1/4">
+                        <div class="px-4 py-4">
+                            <img src="../img/laurensius_yuda.jpeg"
+                                class="shadow-lg rounded-full max-w-full mx-auto h-80 w-80 sm:h-50 sm:w-50" />
                         </div>
+                    </div>
 
-                        <div class="flex flex-col md:flex-row justify-center items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M21.7 6.53c.01.02.01.05.01.08v4.29c0 .1-.06.22-.15.27l-3.61 2.08v4.11c0 .11-.05.21-.15.27l-7.52 4.33c-.02.01-.04.04-.06.04H10s0-.03-.04-.04l-7.52-4.33a.32.32 0 0 1-.15-.27V4.5c0-.05 0-.08.01-.1c0-.01.01-.02.01-.03c0-.02.01-.03.02-.05c0-.01.01-.02.02-.03l.03-.03l.03-.03c.01-.01.02-.02.03-.02L6.2 2.04c.1-.04.22-.04.3 0l3.78 2.17c.01.01.02.01.03.02l.03.03l.03.03c.01.01.02.02.02.03c.01.02.02.03.02.05c0 .01.01.02.01.03c.01.03.01.05.01.1v8l3.14-1.78V6.61c0-.03 0-.06.01-.08l.01-.03s.01-.03.02-.05c0-.01.01-.02.02-.03l.03-.03l.03-.03c.01-.01.02-.02.03-.02l3.78-2.17c.08-.06.2-.06.3 0l3.76 2.17c.01 0 .02.01.03.02l.03.03l.03.03c.01.01.01.02.02.03c.01.02.01.05.02.05s.01 0 .01.03m-.61 4.19V7.15l-3.14 1.8v3.55zm-3.76 6.46V13.6l-6.9 3.94v3.61zM2.91 5v12.18l6.9 3.97v-3.61l-3.6-2.04H6.2c-.01 0-.02 0-.03-.03c-.01 0-.02-.01-.03-.02l-.03-.03c-.01-.01-.01-.02-.02-.03c-.01-.02-.01-.03-.02-.04c0-.02-.01-.03-.01-.04c-.01-.01-.01-.03-.01-.04V6.82zm3.45-2.32L3.23 4.5l3.13 1.78L9.5 4.5zm3.45 10.2V5L6.67 6.82v7.87zm7.83-8.08L14.5 6.61l3.14 1.8l3.13-1.8zm-.31 4.15l-3.14-1.8v3.57l3.14 1.78zM10.12 17L17 13.06l-3.12-1.8L7 15.23z"/></svg>
-                            <p class="text-sm md:text-base text-gray-500 font-bold pt-0.5">Laravel</p>
+                    <div class="w-full md:w-3/4 text-center p-5 md:p-10">
+                        <h1 class="text-5xl font-bold">About Me</h1>
+                        <div class="mt-4">
+                            <div
+                                class="bg-gray-400 w-2/3 md:w-1/6 opacity-75 rounded h-1 mx-auto mb-8">
+                            </div>
+                        </div>
+                        <h2
+                            class="text-xl md:text-3xl font-bold mb-3">
+                            Hi, my name is Laurensius Yuda. Nice to meet you.
+                        </h2>
+                        <h3
+                            class="text-sm md:text-lg mb-5 text-justify indent-6 md:indent-36 hyphens-auto">
+                            I am a Computer Engineering graduate with a
+                            strong passion for technology, particularly
+                            in IoT, Mobile Development, and Back-End
+                            Programming. My academic journey was
+                            enriched by a transformative internship as a
+                            Multiplatform and Back-End Developer,
+                            complemented
+                            by freelance IoT projects. These experiences
+                            enhanced my technical expertise while honing
+                            my leadership and teamwork skills through
+                            active organizational involvement. After
+                            graduating, I started my professional career
+                            at
+                            Indomaret Group as an IT Supervisor,
+                            specializing in Mobile Development using
+                            Flutter and Back-End Programming with
+                            Laravel. Over the past year, I have
+                            contributed to various internal and external
+                            projects, including developing
+                            a mobile application for area supervisors
+                            that simplifies outlet surveys for new store
+                            openings, accelerating the store
+                            establishment process. Driven by curiosity
+                            and a commitment to continuous learning, I
+                            am eager to leverage
+                            my skills to create innovative technological
+                            solutions while further developing both my
+                            technical and interpersonal capabilities.
+                        </h3>
+                    </div>
+                </div>
+                <!-- ! Skill -->
+                <div
+                    class="grid grid-cols-1 bg-gray-200 rounded-lg  md:grid-cols-2 lg:grid-cols-3 md:py-8 md:px-8 md:m-16">
+
+                    <div
+                        class="max-w-sm shadow-lg p-5 m-3 bg-white text-center hover:-translate-y-2 transition duration-300">
+                        <i
+                            class="fas fa-laptop-code fa-5x text-gray-700 mb-6"></i>
+                        <div class="p-4">
+                            <p
+                                class="font-bold text-lg md:text-xl mb-6 text-gray-500">Programming</p>
+                            <div
+                                class="flex flex-row justify-center items-center gap-2 mb-3">
+                                <div
+                                    class="w-8 h-8 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="32" height="32"
+                                        viewBox="0 0 24 24"><path
+                                            fill="currentColor"
+                                            d="M3 15V9h3.5q.6 0 1.05.45T8 10.5v1q0 .6-.45 1.05T6.5 13h-2v2zm6.5 0V9H11v2h2V9h1.5v6H13v-2.5h-2V15zm7 0V9H20q.6 0 1.05.45t.45 1.05v1q0 .6-.45 1.05T20 13h-2v2zm-12-3.5h2v-1h-2zm13.5 0h2v-1h-2z" /></svg>
+                                </div>
+                                <p
+                                    class="text-sm md:text-base text-gray-500 font-bold">PHP
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-row justify-center items-center gap-2 mb-3">
+                                <div
+                                    class="w-8 h-8 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="32" height="32"
+                                        viewBox="0 0 128 128"><path
+                                            fill="currentColor"
+                                            d="M65.3 55.4c2.8 2.6 4.2 6.1 4.2 10.6s-1.4 8.1-4.1 10.8c-2.7 2.6-6.9 4-12.4 4h-9.8V51.7h10.1c5.2 0 9.2 1.2 12 3.7m-4.8 17.3q2.4-2.25 2.4-6.6c0-2.9-.8-5.1-2.4-6.7c-1.6-1.5-4.1-2.4-7.4-2.4h-3.8v18h4.2c3.1 0 5.4-.8 7-2.3m32.1 8.1h-5.8V78c-1.7 2-3.6 3-6 3s-4.4-.7-6-2.1s-2.4-3.2-2.4-5.5s.8-4 2.5-5.1s4-1.7 6.9-1.7h4.6v-.2c0-2.4-1.2-3.6-3.8-3.6c-1.1 0-2.2.2-3.4.6s-2.2 1-3.1 1.6l-2.8-4.1c3-2.2 6.3-3.2 10.1-3.2q4.05 0 6.6 2.1c1.7 1.4 2.5 3.5 2.5 6.5v14.5zm-6.3-8.6v-.9h-3.9c-2.5 0-3.8.7-3.8 2.2q0 1.2.9 1.8c.9.6 1.4.6 2.6.6c1.1 0 2.1-.3 2.9-1c.9-.7 1.3-1.6 1.3-2.7m22.8-8.4c-1.9 0-3.4.6-4.3 2c-.9 1.3-1.5 3.1-1.5 5.3v9.8h-6.2V58.4h6.2v2.9c.8-.9 2-1.7 3.2-2.3s2.6-1 3.9-1v5.9zm11.3-.9v9.9c0 .9.2 1.5.7 2c.4.5 1 .7 1.6.7c1.2 0 2.2-.5 3-1.6l2.3 4.4c-1.9 1.8-4 2.7-6.1 2.7c-2.2 0-4-.7-5.5-2.1s-2.2-3.4-2.2-5.8V51.7h6.2V58h6.6l-3.4 5zM23.1 76.5l2.8-1.3L7.1 56.4v13.9c0 .1 0 .3.1.5zm-.4-21.1c-.2 0-.4-.1-.6-.1H8.2L27 74.1l1.3-2.9zm-1.2-1.6h.8c.4 0 .8.1 1.2.2h.1l-.6-1.5l-3.8-3.8c-.9-.9-2.1-1.1-2.7-.6L8 53.8z" /><path
+                                            fill="currentColor"
+                                            d="M27.2 56.6c-.7-.7-1.9-1.4-3.1-1.7l5.8 16.4l-1.7 3.9l.4.4l3.9-1.3V61.9zM5.7 70.3V56.2L.3 64.4c-.5.6-.3 1.8.6 2.7L4.6 71l1.2.4c-.1-.4-.1-.7-.1-1.1m17.5 7.8l-.3-.1l-15.7-5.6c.4 1 .9 2.1 1.6 2.7l5.5 5.4h12.2l1.4-4.6z" /></svg>
+                                </div>
+                                <p
+                                    class="text-sm md:text-base text-gray-500 font-bold">Dart</p>
+                            </div>
+                            <div
+                                class="flex flex-row justify-center items-center gap-2 mb-3">
+                                <div
+                                    class="w-8 h-8 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="32" height="32"
+                                        viewBox="0 0 24 24"><path
+                                            fill="currentColor"
+                                            d="M7.5 15q-.625 0-1.062-.437T6 13.5v-1h1.5v1H9V9h1.5v4.5q0 .625-.437 1.063T9 15zm5.5 0q-.425 0-.712-.288T12 14v-1h1.5v.5h2v-1H13q-.425 0-.712-.288T12 11.5V10q0-.425.288-.712T13 9h3q.425 0 .713.288T17 10v1h-1.5v-.5h-2v1H16q.425 0 .713.288T17 12.5V14q0 .425-.288.713T16 15z" /></svg>
+                                </div>
+                                <p
+                                    class="text-sm md:text-base text-gray-500 font-bold">JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="max-w-sm shadow-lg p-5 m-3 bg-white text-center hover:-translate-y-2 transition duration-300">
+                        <i
+                            class="fas fa-paint-brush fa-5x text-gray-700 mb-6"></i>
+                        <div class="p-4">
+                            <p
+                                class="font-bold text-lg md:text-xl mb-6 text-gray-500">Design</p>
+
+                            <div
+                                class="flex flex-row justify-center items-center gap-2 mb-3">
+                                <div
+                                    class="w-8 h-8 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="32" height="32"
+                                        viewBox="0 0 24 24"><path
+                                            fill="currentColor"
+                                            d="M10.5 15q-.425 0-.712-.288T9.5 14v-1H11v.5h2v-1h-2.5q-.425 0-.712-.288T9.5 11.5V10q0-.425.288-.712T10.5 9h3q.425 0 .713.288T14.5 10v1H13v-.5h-2v1h2.5q.425 0 .713.288t.287.712V14q0 .425-.288.713T13.5 15zm6.5 0q-.425 0-.712-.288T16 14v-1h1.5v.5h2v-1H17q-.425 0-.712-.288T16 11.5V10q0-.425.288-.712T17 9h3q.425 0 .713.288T21 10v1h-1.5v-.5h-2v1H20q.425 0 .713.288T21 12.5V14q0 .425-.288.713T20 15zM4 15q-.425 0-.712-.288T3 14v-4q0-.425.288-.712T4 9h3q.425 0 .713.288T8 10v1H6.5v-.5h-2v3h2V13H8v1q0 .425-.288.713T7 15z" /></svg>
+                                </div>
+                                <p
+                                    class="text-sm md:text-base text-gray-500 font-bold">Css</p>
+                            </div>
+
+                            <div
+                                class="flex flex-row justify-center items-center gap-2 mb-3">
+                                <div
+                                    class="w-8 h-8 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="32" height="32"
+                                        viewBox="0 0 24 24"><path
+                                            fill="currentColor"
+                                            fill-rule="evenodd"
+                                            d="M8.667 9.417a2.583 2.583 0 1 0 0 5.166h2.583V9.417zm2.583-1.5H8.667a2.583 2.583 0 0 1 0-5.167h2.583zm1.5-5.167v5.167h2.583a2.584 2.584 0 0 0 0-5.167zm2.583 6.666a2.583 2.583 0 0 0-2.583 2.542v.083a2.583 2.583 0 1 0 2.583-2.625m-6.666 6.667a2.584 2.584 0 1 0 2.583 2.584v-2.584z"
+                                            clip-rule="evenodd" /></svg>
+                                </div>
+                                <p
+                                    class="text-sm md:text-base text-gray-500 font-bold">Figma</p>
+                            </div>
+
+                            <div
+                                class="flex flex-row justify-center items-center gap-2 mb-3">
+                                <div
+                                    class="w-8 h-8 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="32" height="32"
+                                        viewBox="0 0 24 24"><path
+                                            fill="currentColor"
+                                            d="M12 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.31.74 1.91 1.35c.98 1 2.09 2.15 4.59 2.15c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C15.61 7.15 14.5 6 12 6m-5 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.3.74 1.91 1.35C8.39 16.85 9.5 18 12 18c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C10.61 13.15 9.5 12 7 12" /></svg>
+                                </div>
+                                <p
+                                    class="text-sm md:text-base text-gray-500 font-bold">Tailwind
+                                </p>
+                            </div>
+
+                            <div
+                                class="flex flex-row justify-center items-center gap-2 mb-3">
+                                <div
+                                    class="w-8 h-8 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="32" height="32"
+                                        viewBox="0 0 24 24"><g
+                                            fill="none" stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"><path
+                                                d="M2 12a2 2 0 0 0 2-2V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2M2 12a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4a2 2 0 0 1 2-2" /><path
+                                                d="M9 16V8h3.5a2 2 0 1 1 0 4H9h4a2 2 0 1 1 0 4z" /></g></svg>
+                                </div>
+                                <p
+                                    class="text-sm md:text-base text-gray-500 font-bold">Bootstrap
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="max-w-sm shadow-lg p-5 m-3 bg-white text-center hover:-translate-y-2 transition duration-300">
+                        <i
+                            class="fas fa-chart-bar fa-5x text-gray-700 mb-6"></i>
+                        <div class="p-4">
+                            <p
+                                class="font-bold text-lg md:text-xl mb-6 text-gray-500">Database</p>
+
+                            <div
+                                class="flex flex-row justify-center items-center gap-2 mb-3">
+                                <div
+                                    class="w-8 h-8 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="32" height="32"
+                                        viewBox="0 0 24 24"><path
+                                            fill="currentColor"
+                                            fill-rule="evenodd"
+                                            d="M20.422 17.337c-1.088-.03-1.932.081-2.64.379c-.203.082-.53.082-.557.338c.11.108.122.284.218.433c.163.27.449.635.707.824l.87.622c.531.325 1.13.514 1.647.838c.299.19.598.433.898.636c.152.108.244.284.435.352v-.041c-.095-.122-.123-.297-.217-.433l-.409-.392a6.4 6.4 0 0 0-1.415-1.365c-.435-.298-1.387-.703-1.564-1.203l-.027-.03c.299-.03.653-.136.939-.217c.463-.121.884-.095 1.36-.216l.653-.19v-.12c-.245-.244-.422-.569-.68-.798a18 18 0 0 0-2.245-1.663c-.422-.27-.966-.447-1.415-.676c-.164-.081-.435-.122-.53-.257c-.246-.297-.381-.69-.558-1.041l-1.116-2.353c-.245-.527-.395-1.054-.694-1.54c-1.4-2.3-2.925-3.692-5.265-5.058c-.503-.284-1.101-.406-1.738-.554l-1.02-.055c-.218-.094-.436-.351-.626-.473c-.775-.487-2.775-1.541-3.347-.151c-.368.878.544 1.743.854 2.19c.231.31.53.662.694 1.014c.091.23.122.473.217.716c.218.595.422 1.258.708 1.812c.152.284.312.582.503.839c.109.151.3.216.34.46c-.19.27-.204.675-.313 1.014c-.49 1.528-.3 3.42.395 4.545c.218.338.731 1.082 1.428.798c.613-.244.476-1.014.653-1.69c.041-.162.014-.27.095-.379v.03l.558 1.123c.422.662 1.157 1.352 1.769 1.812c.326.243.584.662.992.81v-.04h-.026c-.082-.121-.205-.176-.314-.27a6.6 6.6 0 0 1-.707-.812a17.4 17.4 0 0 1-1.523-2.46c-.218-.42-.409-.879-.585-1.298c-.083-.162-.083-.406-.218-.487c-.205.297-.503.555-.654.92c-.258.58-.285 1.297-.38 2.041c-.055.014-.03 0-.055.03c-.435-.107-.585-.554-.748-.932c-.408-.96-.476-2.501-.123-3.61c.096-.284.504-1.177.341-1.447c-.082-.257-.354-.405-.504-.608a5.5 5.5 0 0 1-.49-.865c-.325-.758-.489-1.596-.843-2.353c-.163-.352-.449-.717-.68-1.041c-.259-.365-.544-.622-.748-1.055c-.068-.151-.163-.392-.054-.554c.026-.108.081-.152.19-.176c.176-.151.68.04.857.121c.503.203.925.392 1.347.676c.19.135.394.392.64.46h.285c.436.095.925.03 1.333.152c.72.23 1.374.567 1.96.933a12 12 0 0 1 4.244 4.624c.163.311.23.595.38.92c.287.662.64 1.338.926 1.987c.286.636.558 1.285.966 1.812c.204.284 1.02.433 1.387.582c.272.12.694.23.94.378c.461.284.924.609 1.359.92c.217.162.898.5.939.77zM6.548 5.588a2.2 2.2 0 0 0-.557.068v.03h.027c.109.216.3.365.435.555l.313.649l.027-.03c.19-.136.286-.352.286-.676c-.082-.095-.095-.19-.163-.284c-.082-.135-.259-.203-.368-.311"
+                                            clip-rule="evenodd" /></svg>
+                                </div>
+                                <p
+                                    class="text-sm md:text-base text-gray-500 font-bold">MySQL</p>
+                            </div>
+
+                            <div
+                                class="flex flex-row justify-center items-center gap-2 mb-3">
+                                <div
+                                    class="w-8 h-8 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="28.63" height="32"
+                                        viewBox="0 0 458 512"><path
+                                            fill="currentColor"
+                                            d="m228.502 233.071l-14.428 45.75c-7.693 28.4-7.039 37.358-3.137 43.966c.963 1.624 3.597 6.94 7.278 21.14c5.344 20.554 10.05 51.587 10.165 53.072c-.773 18.97-.355 39.069 1.179 58.313H39.147C17.617 455.312 0 437.695 0 416.166V61.88c0-21.53 17.616-39.15 39.147-39.15h293.008c-44.876 47.605-89.341 137.936-103.653 210.341M435.338 11.136c53.695 47.899.376 157.402-48.565 234.483c-35.586 11.437-77.064 36.696-77.064 36.696s3.45-1.832 16.255-7.203c8.68-3.649 34.598-9.811 50.381-13.41c-26.349 39.726-48.896 67.532-48.896 67.532s-45.97 18.681-60.187 62.14c8.24-46.357 21.913-94.74 41.208-146.3c17.232-46.042 74.796-170.377 117.328-208.788c-46.664 37.193-97.65 115.072-134.4 212.138c-21.751 64.3-33.523 125.992-35.44 177.149c-1.267 33.467 1.626 62.488 8.749 84.632L261.414 512c-6.987-18.132-13.399-49.997-11.865-115.295c-.23-2.913-.367-4.806-.367-4.806s-4.242-28.568-10.343-52.035c-2.702-10.417-5.778-19.836-9.007-25.295c-1.664-2.817.18-14.388 4.824-31.527c7.864 13.692 16.348 28.515 19.607 40.643c0 0-6.284-32.33-16.595-51.197c2.26-7.627 4.96-16.057 8.015-25.07c7.605 13.3 15.361 25.955 18.455 38.63c-3.384-16.193-7.965-32.32-15.101-48.307c12.97-67.496 54.719-155.876 99.696-203.59c24.007-25.617 57.092-48.544 86.605-23.015" /></svg>
+                                </div>
+                                <p
+                                    class="text-sm md:text-base text-gray-500 font-bold">SQLite</p>
+                            </div>
+
+                            <div
+                                class="flex flex-row justify-center items-center gap-2 mb-3">
+                                <div
+                                    class="w-8 h-8 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="32" height="32"
+                                        viewBox="0 0 24 24"><path
+                                            fill="currentColor"
+                                            d="M16.805 1a10 10 0 0 0-2.603.37l-.06.018a10.6 10.6 0 0 0-1.615-.151c-1.113-.019-2.07.243-2.84.68c-.76-.256-2.336-.697-3.997-.609c-1.157.061-2.419.402-3.354 1.36c-.933.958-1.426 2.44-1.322 4.457c.028.557.191 1.464.463 2.64c.27 1.175.652 2.55 1.127 3.805s.996 2.384 1.81 3.15c.406.384.965.707 1.624.68c.463-.018.882-.215 1.243-.506c.176.225.364.323.535.414c.215.114.425.192.642.244a4.6 4.6 0 0 0 1.84.091c.267-.043.548-.127.828-.247c.01.302.022.598.035.898c.038.95.063 1.827.357 2.596c.047.126.176.773.687 1.344c.51.572 1.51.928 2.648.692c.803-.167 1.825-.468 2.503-1.404c.67-.926.973-2.254 1.033-4.409c.015-.116.033-.215.052-.308l.16.014h.018c.857.038 1.787-.08 2.564-.43c.688-.31 1.208-.622 1.587-1.177c.095-.137.199-.303.227-.59c.028-.285-.14-.733-.421-.939c-.563-.414-.916-.257-1.295-.18q-.56.12-1.136.133c1.093-1.784 1.876-3.68 2.323-5.358c.264-.99.413-1.903.425-2.701s-.055-1.505-.548-2.117c-1.541-1.91-3.708-2.438-5.384-2.456q-.078-.002-.156-.001zm-.044.587c1.585-.015 3.611.417 5.065 2.22c.327.405.424.997.413 1.727c-.012.729-.151 1.601-.405 2.557c-.493 1.852-1.425 4.01-2.738 5.948a.7.7 0 0 0 .15.079c.274.11.898.204 2.145-.044c.313-.065.543-.108.781.068a.48.48 0 0 1 .173.39a.64.64 0 0 1-.123.308c-.24.351-.716.684-1.326.958c-.539.244-1.313.371-1.999.379c-.344.003-.661-.023-.93-.104l-.018-.006c-.104.971-.343 2.89-.498 3.765c-.125.706-.343 1.267-.76 1.687c-.416.42-1.004.673-1.796.838c-.981.204-1.696-.016-2.157-.393c-.46-.375-.671-.874-.798-1.18c-.087-.21-.132-.483-.176-.848a18 18 0 0 1-.097-1.315a46 46 0 0 1-.028-2.312c-.41.363-.92.605-1.467.696c-.65.107-1.232.002-1.579-.082a2.2 2.2 0 0 1-.49-.185c-.162-.083-.315-.177-.417-.363a.5.5 0 0 1-.054-.35a.56.56 0 0 1 .206-.303c.188-.148.435-.23.808-.306c.68-.135.917-.228 1.061-.339c.123-.095.262-.287.508-.57l-.003-.037a2.9 2.9 0 0 1-1.257-.328c-.141.144-.865.887-1.748 1.917c-.371.431-.781.678-1.214.696s-.824-.194-1.156-.506c-.665-.626-1.195-1.703-1.657-2.92c-.46-1.218-.836-2.574-1.102-3.729c-.268-1.155-.426-2.086-.448-2.535c-.1-1.909.36-3.195 1.15-4.006S4.652 1.94 5.708 1.882c1.894-.106 3.693.535 4.057.673c.701-.462 1.604-.75 2.733-.732a7.2 7.2 0 0 1 1.588.2l.019-.008q.344-.117.698-.196a9.4 9.4 0 0 1 1.957-.23zm.143.614h-.137a8.5 8.5 0 0 0-1.61.176a7.05 7.05 0 0 1 2.692 2.062a7.7 7.7 0 0 1 1.07 1.76c.104.242.174.447.213.605c.02.08.034.147.038.217a.4.4 0 0 1-.011.132l-.006.012c.029.803-.176 1.347-.201 2.113c-.019.556.127 1.209.163 1.92c.034.67-.049 1.405-.497 2.127q.056.066.108.132c1.185-1.81 2.04-3.814 2.495-5.521c.243-.92.373-1.753.384-2.413c.01-.66-.117-1.139-.279-1.338c-1.268-1.573-2.983-1.974-4.422-1.985m-4.525.235c-1.117.002-1.919.33-2.526.82c-.627.507-1.047 1.2-1.323 1.911a7.9 7.9 0 0 0-.485 2.213l.013-.007c.337-.184.78-.367 1.254-.473c.475-.106.986-.139 1.449.035s.846.584.985 1.206c.665 2.986-.207 4.096-.529 4.933a9 9 0 0 0-.312.929q.06-.017.121-.024a1.06 1.06 0 0 1 .51.1c.324.13.546.402.666.714q.047.124.067.26q.02.057.019.117a49 49 0 0 0 .012 3.426c.022.494.054.928.095 1.271c.04.342.098.602.135.69c.12.294.297.678.617.939s.777.434 1.614.26c.726-.151 1.174-.36 1.474-.663c.298-.301.477-.72.591-1.363c.171-.963.515-3.754.556-4.28c-.018-.395.042-.7.172-.932c.135-.238.343-.384.522-.463c.09-.04.174-.066.243-.085a6 6 0 0 0-.23-.298a4 4 0 0 1-.629-1.007a8 8 0 0 0-.243-.443c-.125-.22-.284-.495-.45-.804c-.333-.619-.695-1.369-.883-2.1c-.187-.729-.215-1.484.265-2.017c.426-.473 1.172-.669 2.293-.559c-.033-.096-.053-.176-.109-.304a7 7 0 0 0-.983-1.617c-.95-1.178-2.487-2.346-4.863-2.384h-.108zm-6.276.047q-.18 0-.36.01c-.954.053-1.856.322-2.501.986c-.647.663-1.072 1.751-.98 3.553c.019.34.172 1.296.434 2.43c.262 1.136.634 2.471 1.08 3.65c.446 1.18.988 2.207 1.502 2.693c.259.243.484.341.688.333c.205-.01.451-.124.753-.475a40 40 0 0 1 1.71-1.877a3.2 3.2 0 0 1-.932-1.307a3.1 3.1 0 0 1-.17-1.58c.097-.678.11-1.312.099-1.812c-.012-.488-.048-.812-.048-1.015v-.028a8.8 8.8 0 0 1 .559-3.095c.264-.682.658-1.375 1.249-1.936c-.58-.185-1.61-.467-2.725-.52a7 7 0 0 0-.36-.01zm11.714 4.842c-.641.008-1.001.169-1.19.379c-.268.298-.293.82-.127 1.464s.507 1.365.829 1.963c.16.3.316.57.442.788c.127.22.22.376.276.51q.08.181.168.331c.248-.509.293-1.008.267-1.529c-.033-.644-.187-1.303-.164-1.97c.025-.78.184-1.289.198-1.892a6 6 0 0 0-.699-.044m-7.78.105a2.7 2.7 0 0 0-.582.068a4.5 4.5 0 0 0-1.09.412q-.173.09-.33.209l-.02.018c.006.134.033.459.045.936c.01.523-.002 1.19-.106 1.91c-.226 1.568.946 2.866 2.324 2.868c.08-.322.213-.648.345-.992c.384-1.003 1.139-1.734.503-4.589c-.104-.467-.31-.656-.594-.763a1.4 1.4 0 0 0-.495-.077m7.48.187h.048q.094.003.17.02a.4.4 0 0 1 .13.051a.15.15 0 0 1 .071.1v.008a.2.2 0 0 1-.034.124a.6.6 0 0 1-.104.137a.65.65 0 0 1-.364.195a.57.57 0 0 1-.388-.095a.6.6 0 0 1-.123-.108a.24.24 0 0 1-.06-.116a.15.15 0 0 1 .04-.118a.4.4 0 0 1 .111-.082a1.3 1.3 0 0 1 .504-.118zm-7.388.154q.075 0 .157.012c.144.02.273.057.371.112q.072.037.126.097q.028.033.042.073t.009.083a.27.27 0 0 1-.071.141a.6.6 0 0 1-.135.12a.62.62 0 0 1-.424.103a.7.7 0 0 1-.396-.209a.7.7 0 0 1-.112-.15a.25.25 0 0 1-.039-.162c.014-.1.099-.15.18-.18a.8.8 0 0 1 .29-.036zm8.56 6.732h-.003c-.139.05-.253.07-.35.11a.42.42 0 0 0-.225.197c-.06.105-.11.292-.095.61a.5.5 0 0 0 .14.064c.161.048.432.08.735.075c.602-.007 1.344-.143 1.738-.321c.323-.146.623-.336.891-.564c-1.317.264-2.06.194-2.517.011a1.3 1.3 0 0 1-.314-.183m-7.588.086h-.02c-.05.004-.123.02-.263.172c-.33.358-.444.582-.716.792c-.27.21-.623.321-1.327.461c-.223.044-.35.093-.436.132c.028.022.025.028.066.049c.103.055.236.103.342.13c.303.073.8.159 1.319.073s1.058-.327 1.518-.953c.08-.108.088-.268.023-.44c-.067-.17-.211-.318-.313-.36a.6.6 0 0 0-.193-.054z" /></svg>
+                                </div>
+                                <p
+                                    class="text-sm md:text-base text-gray-500 font-bold">PostgreSQL</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class=" max-w-sm shadow-lg px-4 py-4 bg-gray-400 m-3 "></div>
-                <div class="max-w-sm shadow-lg px-4 py-4 bg-gray-600 m-3 "></div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skill Framework -->
-    <section class="w-screen mx-auto py-4 bg-white h-32 ">
-        Skill Framework
-    </section>
-    <!-- My Recent Work -->
-    <section class="w-screen mx-auto py-4 bg-gray-300 h-32 ">
-        Recent Work
-    </section>
-    <!-- Contact Me -->
-    <section class="w-screen mx-auto py-4 bg-indigo-700 h-32 ">
-        Contact Me
-    </section>
-    <!-- Footer -->
-    <section class="w-screen mx-auto py-4 bg-white h-32 ">Footer</section>
-</body>
+        <!-- Skill Framework -->
+        <section class="w-screen mx-auto py-4 bg-white">
+            <div class="flex flex-wrap">
+                <div
+                    class="w-full md:w-4/12 ml-auto mr-auto px-4 bg-blue-500 h-32"></div>
+                <div
+                    class="w-full md:w-5/12 ml-auto mr-auto px-4 bg-pink-500 h-32"></div>
+            </div>
+        </section>
+        <!-- My Recent Work -->
+        <section class="w-screen mx-auto py-4 bg-gray-300 h-32 ">
+            Recent Work
+        </section>
+        <!-- Contact Me -->
+        <section class="w-screen mx-auto py-4 bg-indigo-700 h-32 ">
+            Contact Me
+        </section>
+        <!-- Footer -->
+        <section class="w-screen mx-auto py-4 bg-white h-32 ">Footer</section>
+    </body>
 
 </html>
